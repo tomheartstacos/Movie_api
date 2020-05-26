@@ -1,6 +1,6 @@
 const http = require('http'),
-fs = require('fs'),
-url = require('url');
+  fs = require('fs'),
+  url = require('url');
 
 http.createServer((request, response) => {
   var addr = request.url,
@@ -10,7 +10,7 @@ http.createServer((request, response) => {
   if (q.pathname.includes('documentation')) {
     filePath = (__dirname + '/documentation.html');
   } else {
-    filePath = 'index.html';
+    filePath = 'documentation.html';
   }
 
   fs.appendFile('log.txt', 'URL: ' + addr + '\nTimestamp: ' + new Date() + '\n\n', function(err) {
