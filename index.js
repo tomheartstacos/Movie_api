@@ -18,6 +18,38 @@ app.get('movies', (req, res) => {
 
 app.use('/documentation', express.static('public'));
 });
+let topMovies = [
+    {"moviename":"Parasite",
+    "rottenrank":"99%"},
+
+    {"moviename":"Avengers",
+    "rottenrank":"94%"},
+
+    {"moviename":"Us",
+    "rottenrank":"93%"},
+
+    {"moviename":"Knives Out",
+    "rottenrank":"97%"},
+
+    {"moviename":"Toy Story 4",
+    "rottenrank":"97%"},
+
+    {"moviename":"The Irishman",
+    "rottenrank":"96%"},
+
+    {"moviename":"Little Women",
+    "rottenrank":"95%"},
+
+    {"moviename":"Booksmart",
+    "rottenrank":"97%"},
+
+    {"moviename":"The Farewell",
+    "rottenrank":"98%"},
+
+    {"moviename":"Marriage Story",
+    "rottenrank":"99%"}
+];
+exports.topMovies = topMovies;
 
 // use Morgan to log all requests
 
