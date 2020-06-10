@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
   res.send('Welcome to my Movie club!');
 });
 
-app.get('/movies', (req, res) => {
+app.get('movies', (req, res) => {
   res.json(topMovies);
 });
 
