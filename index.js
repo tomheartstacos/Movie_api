@@ -5,6 +5,8 @@ const app = express();
 
 app.use(morgan('common'));
 
+topMovies = (topMovies.json);
+
 // GET requests
 app.get('/', (req, res) => {
   res.send('Welcome to my Movie club!');
@@ -20,14 +22,6 @@ app.use('/documentation', express.static('public'));
 // use Morgan to log all requests
 
 app.use(morgan('common'));
-
-app.get('/', (req, res) => {
-  res.send('Welcome to my app!');
-});
-
-app.get('/movies', (req, res) => {
-  res.send('This is the movies folder.');
-});
 
 app.listen(8080, () => {
   console.log('Your app is listening on port 8080.');
